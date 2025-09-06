@@ -20,10 +20,7 @@
     "url": "https://github.com/Ravitejakoyya/devsecops-pipeline-end-to-end/issues"
   },
   "homepage": "https://github.com/Ravitejakoyya/devsecops-pipeline-end-to-end#readme",
-"dependencies": {
-},
-"devDependencies": {
-  "eslint": "^9.35.0"
-}
-
+  "devDependencies": {
+    "eslint": "^9.35.0"
+  }
 }

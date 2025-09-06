@@ -1,0 +1,148 @@
+
+==> Audit <==
+|---------|-----------------------|----------|-----------------------|---------|---------------------|----------|
+| Command |         Args          | Profile  |         User          | Version |     Start Time      | End Time |
+|---------|-----------------------|----------|-----------------------|---------|---------------------|----------|
+| start   |                       | minikube | LAPTOP-FD42V3A5\ravit | v1.36.0 | 06 Sep 25 12:27 IST |          |
+| addons  | enable metrics-server | minikube | LAPTOP-FD42V3A5\ravit | v1.36.0 | 06 Sep 25 12:30 IST |          |
+|---------|-----------------------|----------|-----------------------|---------|---------------------|----------|
+
+
+==> Last Start <==
+Log file created at: 2025/09/06 12:27:36
+Running on machine: LAPTOP-FD42V3A5
+Binary: Built with gc go1.24.0 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0906 12:27:36.445362   32452 out.go:345] Setting OutFile to fd 108 ...
+I0906 12:27:36.446653   32452 out.go:397] isatty.IsTerminal(108) = true
+I0906 12:27:36.446653   32452 out.go:358] Setting ErrFile to fd 112...
+I0906 12:27:36.446653   32452 out.go:397] isatty.IsTerminal(112) = true
+W0906 12:27:36.457761   32452 root.go:314] Error reading config file at C:\Users\ravit\.minikube\config\config.json: open C:\Users\ravit\.minikube\config\config.json: The system cannot find the file specified.
+I0906 12:27:36.463746   32452 out.go:352] Setting JSON to false
+I0906 12:27:36.464260   32452 start.go:130] hostinfo: {"hostname":"LAPTOP-FD42V3A5","uptime":503138,"bootTime":1756638718,"procs":300,"os":"windows","platform":"Microsoft Windows 11 Home Single Language","platformFamily":"Standalone Workstation","platformVersion":"10.0.26100.5074 Build 26100.5074","kernelVersion":"10.0.26100.5074 Build 26100.5074","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"3422057b-a964-48c5-9234-a93456714460"}
+W0906 12:27:36.464260   32452 start.go:138] gopshost.Virtualization returned error: not implemented yet
+I0906 12:27:36.466108   32452 out.go:177] 😄  minikube v1.36.0 on Microsoft Windows 11 Home Single Language 10.0.26100.5074 Build 26100.5074
+I0906 12:27:36.467135   32452 notify.go:220] Checking for updates...
+W0906 12:27:36.467135   32452 preload.go:293] Failed to list preload files: open C:\Users\ravit\.minikube\cache\preloaded-tarball: The system cannot find the file specified.
+I0906 12:27:36.467646   32452 driver.go:404] Setting default libvirt URI to qemu:///system
+I0906 12:27:36.467646   32452 global.go:112] Querying for installed drivers using PATH=C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\Kubernetes\Minikube;C:\Users\ravit\AppData\Local\Microsoft\WindowsApps;C:\Users\ravit\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ravit\AppData\Local\GitHubDesktop\bin;C:\Users\ravit\AppData\Roaming\npm;c:\Users\ravit\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
+I0906 12:27:36.615829   32452 virtualbox.go:136] virtual box version: 7.1.6r167084
+I0906 12:27:36.615829   32452 global.go:133] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.1.6r167084
+}
+I0906 12:27:36.619190   32452 global.go:133] vmware default: false priority: 5, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "vmrun": executable file not found in %PATH% Reason: Fix:Install vmrun Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+W0906 12:27:36.727429   32452 docker.go:181] docker version returned error: exit status 1
+I0906 12:27:36.727429   32452 global.go:133] docker default: true priority: 9, state: {Installed:true Healthy:false Running:true NeedsImprovement:false Error:"docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}" exit status 1: error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.48/version": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified. Reason:PROVIDER_DOCKER_VERSION_EXIT_1 Fix: Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/ Version:}
+I0906 12:27:36.730627   32452 global.go:133] podman default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in %PATH% Reason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/ Version:}
+I0906 12:27:36.730627   32452 global.go:133] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0906 12:27:44.742627   32452 global.go:133] hyperv default: true priority: 8, state: {Installed:true Healthy:false Running:false NeedsImprovement:false Error:C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator") returned "" Reason: Fix:Unable to determine current user's administrator privileges Doc: Version:}
+I0906 12:27:44.746596   32452 global.go:133] qemu2 default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "qemu-system-x86_64": executable file not found in %PATH% Reason: Fix:Install qemu-system Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/qemu/ Version:}
+I0906 12:27:44.746596   32452 driver.go:326] not recommending "ssh" due to default: false
+I0906 12:27:44.746596   32452 driver.go:321] not recommending "docker" due to health: "docker version --format {{.Server.Os}}-{{.Server.Version}}:{{.Server.Platform.Name}}" exit status 1: error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.48/version": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+I0906 12:27:44.746596   32452 driver.go:321] not recommending "hyperv" due to health: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -NonInteractive @([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator") returned ""
+I0906 12:27:44.746596   32452 driver.go:361] Picked: virtualbox
+I0906 12:27:44.746596   32452 driver.go:362] Alternatives: [ssh]
+I0906 12:27:44.746596   32452 driver.go:363] Rejects: [vmware docker podman hyperv qemu2]
+I0906 12:27:44.765038   32452 out.go:177] ✨  Automatically selected the virtualbox driver
+I0906 12:27:44.766472   32452 start.go:304] selected driver: virtualbox
+I0906 12:27:44.766472   32452 start.go:908] validating driver "virtualbox" against <nil>
+I0906 12:27:44.766472   32452 start.go:919] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.1.6r167084
+}
+I0906 12:27:44.766472   32452 start_flags.go:311] no existing cluster config was found, will generate one from the flags 
+I0906 12:27:44.810346   32452 start_flags.go:394] Using suggested 4000MB memory alloc based on sys=16108MB, container=0MB
+I0906 12:27:44.810346   32452 start_flags.go:958] Wait components to verify : map[apiserver:true system_pods:true]
+I0906 12:27:44.810888   32452 cni.go:84] Creating CNI manager for ""
+I0906 12:27:44.810888   32452 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0906 12:27:44.810888   32452 start_flags.go:320] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0906 12:27:44.810888   32452 start.go:347] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.47@sha256:6ed579c9292b4370177b7ef3c42cc4b4a6dcd0735a1814916cbc22c8bf38412b Memory:4000 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.33.1 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\ravit:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0906 12:27:44.811553   32452 iso.go:125] acquiring lock: {Name:mkffcadcdf57f31b65de104fdd2ff8b08c44f13a Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0906 12:27:44.812631   32452 out.go:177] 💿  Downloading VM boot image ...
+I0906 12:27:44.813149   32452 download.go:108] Downloading: https://storage.googleapis.com/minikube/iso/minikube-v1.36.0-amd64.iso?checksum=file:https://storage.googleapis.com/minikube/iso/minikube-v1.36.0-amd64.iso.sha256 -> C:\Users\ravit\.minikube\cache\iso\amd64\minikube-v1.36.0-amd64.iso
+I0906 12:28:21.254091   32452 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0906 12:28:21.255319   32452 preload.go:131] Checking if preload exists for k8s version v1.33.1 and runtime docker
+I0906 12:28:21.508389   32452 preload.go:118] Found remote preload: https://storage.googleapis.com/minikube-preloaded-volume-tarballs/v18/v1.33.1/preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4
+I0906 12:28:21.508389   32452 cache.go:56] Caching tarball of preloaded images
+I0906 12:28:21.508995   32452 preload.go:131] Checking if preload exists for k8s version v1.33.1 and runtime docker
+I0906 12:28:21.511414   32452 out.go:177] 💾  Downloading Kubernetes v1.33.1 preload ...
+I0906 12:28:21.512919   32452 preload.go:236] getting checksum for preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4 ...
+I0906 12:28:21.827753   32452 download.go:108] Downloading: https://storage.googleapis.com/minikube-preloaded-volume-tarballs/v18/v1.33.1/preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4?checksum=md5:426761ca53f0b79ef3d0619b4605274e -> C:\Users\ravit\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4
+I0906 12:28:57.591677   32452 preload.go:247] saving checksum for preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4 ...
+I0906 12:28:57.593858   32452 preload.go:254] verifying checksum of C:\Users\ravit\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4 ...
+I0906 12:28:58.125736   32452 cache.go:59] Finished verifying existence of preloaded tar for v1.33.1 on docker
+I0906 12:28:58.126652   32452 profile.go:143] Saving config to C:\Users\ravit\.minikube\profiles\minikube\config.json ...
+I0906 12:28:58.126652   32452 lock.go:35] WriteFile acquiring C:\Users\ravit\.minikube\profiles\minikube\config.json: {Name:mkc789f642033d7fa1879b5f1201fa2f4a032bff Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0906 12:28:58.127996   32452 start.go:360] acquireMachinesLock for minikube: {Name:mk33056983fef171d58f04fe317233d467ad1453 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0906 12:28:58.127996   32452 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0906 12:28:58.127996   32452 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.36.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.47@sha256:6ed579c9292b4370177b7ef3c42cc4b4a6dcd0735a1814916cbc22c8bf38412b Memory:4000 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.33.1 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\ravit:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0906 12:28:58.127996   32452 start.go:125] createHost starting for "" (driver="virtualbox")
+I0906 12:28:58.129002   32452 out.go:235] 🔥  Creating virtualbox VM (CPUs=2, Memory=4000MB, Disk=20000MB) ...
+I0906 12:28:58.130003   32452 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0906 12:28:58.130003   32452 client.go:168] LocalClient.Create starting
+I0906 12:28:58.131101   32452 main.go:141] libmachine: Creating CA: C:\Users\ravit\.minikube\certs\ca.pem
+I0906 12:28:58.180572   32452 main.go:141] libmachine: Creating client certificate: C:\Users\ravit\.minikube\certs\cert.pem
+I0906 12:28:58.318444   32452 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0906 12:28:58.396709   32452 main.go:141] libmachine: STDOUT:
+{
+7.1.6r167084
+}
+I0906 12:28:58.396709   32452 main.go:141] libmachine: STDERR:
+{
+}
+I0906 12:28:58.399934   32452 main.go:141] libmachine: Hyper-V is not installed.
+%!(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %PATH%)
+I0906 12:28:58.399934   32452 client.go:171] duration metric: took 269.9312ms to LocalClient.Create
+I0906 12:29:00.400604   32452 start.go:128] duration metric: took 2.2726071s to createHost
+I0906 12:29:00.400604   32452 start.go:83] releasing machines lock for "minikube", held for 2.2726071s
+W0906 12:29:00.400604   32452 start.go:714] error starting host: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0906 12:29:00.402386   32452 cli_runner.go:164] Run: docker container inspect minikube --format={{.State.Status}}
+W0906 12:29:00.450688   32452 cli_runner.go:211] docker container inspect minikube --format={{.State.Status}} returned with exit code 1
+I0906 12:29:00.450688   32452 delete.go:46] couldn't inspect container "minikube" before deleting: unknown state "minikube": docker container inspect minikube --format={{.State.Status}}: exit status 1
+stdout:
+
+
+stderr:
+error during connect: Get "http://%2F%2F.%2Fpipe%2FdockerDesktopLinuxEngine/v1.48/containers/minikube/json": open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+I0906 12:29:00.454415   32452 cli_runner.go:164] Run: podman container inspect minikube --format={{.State.Status}}
+I0906 12:29:00.454415   32452 delete.go:46] couldn't inspect container "minikube" before deleting: unknown state "minikube": podman container inspect minikube --format={{.State.Status}}: exec: "podman": executable file not found in %PATH%
+stdout:
+
+stderr:
+W0906 12:29:00.454415   32452 start.go:719] delete host: Docker machine "minikube" does not exist. Use "docker-machine ls" to list machines. Use "docker-machine create" to add a new one.
+W0906 12:29:00.454415   32452 out.go:270] 🤦  StartHost failed, but will try again: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0906 12:29:00.454944   32452 start.go:729] Will try again in 5 seconds ...
+I0906 12:29:05.455049   32452 start.go:360] acquireMachinesLock for minikube: {Name:mk33056983fef171d58f04fe317233d467ad1453 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0906 12:29:05.455049   32452 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0906 12:29:05.455812   32452 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.36.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.47@sha256:6ed579c9292b4370177b7ef3c42cc4b4a6dcd0735a1814916cbc22c8bf38412b Memory:4000 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.33.1 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\ravit:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0906 12:29:05.455812   32452 start.go:125] createHost starting for "" (driver="virtualbox")
+I0906 12:29:05.457727   32452 out.go:235] 🔥  Creating virtualbox VM (CPUs=2, Memory=4000MB, Disk=20000MB) ...
+I0906 12:29:05.458772   32452 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0906 12:29:05.458772   32452 client.go:168] LocalClient.Create starting
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Reading certificate data from C:\Users\ravit\.minikube\certs\ca.pem
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Decoding PEM data...
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Parsing certificate...
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Reading certificate data from C:\Users\ravit\.minikube\certs\cert.pem
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Decoding PEM data...
+I0906 12:29:05.458772   32452 main.go:141] libmachine: Parsing certificate...
+I0906 12:29:05.459347   32452 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0906 12:29:05.539073   32452 main.go:141] libmachine: STDOUT:
+{
+7.1.6r167084
+}
+I0906 12:29:05.539073   32452 main.go:141] libmachine: STDERR:
+{
+}
+I0906 12:29:05.543024   32452 main.go:141] libmachine: Hyper-V is not installed.
+%!(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %PATH%)
+I0906 12:29:05.543024   32452 client.go:171] duration metric: took 84.2522ms to LocalClient.Create
+I0906 12:29:07.543366   32452 start.go:128] duration metric: took 2.0875545s to createHost
+I0906 12:29:07.543366   32452 start.go:83] releasing machines lock for "minikube", held for 2.0883172s
+W0906 12:29:07.543366   32452 out.go:270] 😿  Failed to start virtualbox VM. Running "minikube delete" may fix it: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+I0906 12:29:07.544658   32452 out.go:201] 
+W0906 12:29:07.545179   32452 out.go:270] ❌  Exiting due to HOST_VIRT_UNAVAILABLE: Failed to start host: creating host: create: precreate: This computer doesn't have VT-X/AMD-v enabled. Enabling it in the BIOS is mandatory
+W0906 12:29:07.545179   32452 out.go:270] 💡  Suggestion: Virtualization support is disabled on your computer. If you are running minikube within a VM, try '--driver=docker'. Otherwise, consult your systems BIOS manual for how to enable virtualization.
+W0906 12:29:07.545179   32452 out.go:270] 🍿  Related issues:
+W0906 12:29:07.545756   32452 out.go:270]     ▪ https://github.com/kubernetes/minikube/issues/3900
+W0906 12:29:07.545756   32452 out.go:270]     ▪ https://github.com/kubernetes/minikube/issues/4730
+I0906 12:29:07.546845   32452 out.go:201] 
+
+
