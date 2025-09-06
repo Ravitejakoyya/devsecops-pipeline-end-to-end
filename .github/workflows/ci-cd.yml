@@ -2,8 +2,8 @@ name: DevSecOps CI/CD
 
 on:
   push:
-    branches: [ main ]
-
+    branches:
+        - pipeline-setup
 jobs:
   pipeline:
     runs-on: ubuntu-latest
