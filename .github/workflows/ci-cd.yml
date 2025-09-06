@@ -1,0 +1,54 @@
+name: DevSecOps CI/CD
+
+on:
+  push:
+    branches:
+        - pipeline-setup
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Lint code
+      run: npm run lint
+
+    - name: Run tests
+      run: npm test
+
+    - name: CodeQL Init
+      uses: github/codeql-action/init@v2
+      with:
+        languages: javascript
+
+    - name: CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+
+    - name: Build Docker image
+      run: docker build -t devsecops-app .
+
+    - name: Scan Docker image with Trivy
+      uses: aquasecurity/trivy-action@master
+      with:
+        image-ref: 'devsecops-app'
+        format: 'table'
+        exit-code: '0'
+        ignore-unfixed: true
+
+    - name: Dependency Scan
+      run: trivy fs --scanners vuln .
+
+    - name: Checkov Terraform Scan
+      uses: bridgecrewio/checkov-action@master
+      with:
+        directory: terraform
